@@ -1,10 +1,13 @@
 import React from 'react'
+import {Provider} from 'react-redux'
+import store from "./reduxContainer/Store"
 
 
 
 
 const App = () => {
   return (
+    <Provider store={store}>
     <form style={{backgroundColor:"skyblue",minHeight:"100vh",minWidth:"100vh",color:"white",alignItems:"center",display:"flex",flexDirection:"column",marginTop:"0", paddingTop: "50px" }}>
       <h1>TASKIFY</h1>
      
@@ -12,7 +15,8 @@ const App = () => {
    <button>Go</button>
 
     </form>
-  )
+
+    </Provider>  )
 }
 
 export default App
