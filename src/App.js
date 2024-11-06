@@ -1,8 +1,12 @@
 import React from 'react'
+// import { Script } from 'vm'
+// import { Script } from 'Script.js'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      {/* <Script.js/> */}
+    </div>
   )
 }
 
